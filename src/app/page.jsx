@@ -19,6 +19,12 @@ import CaasEdgeSection from "./components/Home/CaasEdgeSection";
 // import WhatWeDo from "@/components/Home/WhatWeDo";
 // import AwardsSection from "@/components/Home/AwardsSection";
 // import HomeGridSection from "@/components/Home/HomeGrid";
+import dynamic from "next/dynamic";
+
+const HeroSectionLayout = dynamic(
+  () => import("./components/Home/HeroSection"), 
+  { ssr: false }
+);
 
 
 export default function HomePage() {
@@ -26,7 +32,7 @@ export default function HomePage() {
     <>
       
 
-      <HeroSection />
+      <HeroSectionLayout />
       {/* <HeroSectionLayout /> */}
       <PromoHero />
       <AyatiAboutSection />

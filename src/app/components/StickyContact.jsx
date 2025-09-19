@@ -45,7 +45,7 @@ export default function StickyContact({
         aria-label="Open contact page"
         title="Open contact page"
       >
-        <FaQuoteRight className="text-xl" />
+        <FaQuoteRight className="text-xl text-white" />
       </motion.button>
     </div>
   );

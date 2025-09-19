@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { motion } from "framer-motion";
 
 const fadeInUp = {
@@ -6,7 +7,7 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-export default function HeroSectionLayout() {
+export default function HeroSection() {
   return (
     <section className="bg-white py-10 md:pt-20">
       {/* 

@@ -10,7 +10,7 @@ export default function Footer() {
     "relative px-1 font-secondary text-black/70 hover:text-primary transition";
 
   return (
-    <footer className="bg-background border-t border-foreground/10 font-secondary px-6 md:px-20">
+    <footer className="bg-background border-t border-secondary/40 font-secondary px-6 md:px-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-5">
         {/* Left - Logo & Links */}
         <div className="flex flex-col md:flex-row items-center md:space-x-6 text-sm md:text-lg text-center md:text-left gap-2">

@@ -54,11 +54,11 @@ export default function PromoHero() {
 
       {/* ✅ TV Image */}
       <FadeInWhenVisible delay={0.4} y={10}>
-        <div className="mt-8 sm:mt-10 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl w-full mx-auto flex justify-center items-center">
+        <div className="mt-8 sm:mt-10 w-full mx-auto flex justify-center items-center">
           <img
             src="/assets/tv-utsah.png"
             alt="The Year of Utsah"
-            className="mx-auto w-full h-auto object-contain"
+            className="mx-auto h-82 object-contain"
           />
         </div>
       </FadeInWhenVisible>
