@@ -12,8 +12,8 @@ export default function Connection(){
   </h2>
 
   {/* Description */}
-  <p className="text-gray-600 max-w-xl mx-auto mb-8 text-sm sm:text-base">
-    Got questions, goals, or big ideas? Let’s talk strategy, scale, and digital moves. 
+  <p className="text-gray-600  mx-auto mb-8 text-sm sm:text-base">
+    Got questions, goals, or big ideas? Let’s talk strategy, scale, and digital moves. <br />
     Drop us a message and we’ll get back faster than your next scroll.
   </p>
 

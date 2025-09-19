@@ -7,9 +7,9 @@ export const metadata = {
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";
 
-import Connection from "../components/Home/Connection";
 import TeamIntro from "../components/Teams/TeamIntro";
 import TeamMember from "../components/Teams/TeamMember";
+import Connection from "../components/Teams/Connection";
 
 export default function TeamPage() {
   return (

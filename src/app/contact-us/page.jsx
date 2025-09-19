@@ -13,6 +13,7 @@ import Brand from "../components/Contact/Brand";
 import Map from "../components/Contact/Map";
 import PartnersInClimb from "../components/Home/PartnersInClimb";
 import Location from "../components/Contact/Location";
+import Connection from "../components/Home/Connection";
 
 
 export default function ContactPage() {
