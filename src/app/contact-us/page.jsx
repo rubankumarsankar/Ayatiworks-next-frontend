@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "About Ayatiworks - Experts in Digital Marketing & Branding Chennai",
+  title: "Contact Us",
   description:
-    "Discover top digital marketing & branding experts in Chennai. Unleash your brand’s potential with innovative strategies tailored for success!", 
+    "Ready to grow your brand? Connect with Chennai’s top digital marketing experts today for tailored solutions that drive results! Reach out now!", 
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";
