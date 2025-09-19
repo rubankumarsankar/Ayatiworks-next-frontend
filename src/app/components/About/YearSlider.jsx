@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BiSolidRightArrow, BiSolidLeftArrow} from "react-icons/bi";
+import { BiSolidRightArrow, BiSolidLeftArrow } from "react-icons/bi";
 
 const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017];
 
@@ -83,7 +83,6 @@ export default function YearSlider() {
             }
           >
             <BiSolidLeftArrow className="h-6 w-6" />
-
           </button>
 
           <div className="flex items-center">
@@ -116,8 +115,7 @@ export default function YearSlider() {
             className="text-primary px-2"
             onClick={() => setActiveIndex((prev) => (prev + 1) % years.length)}
           >
-            <BiSolidRightArrow className="h-6 w-6"/>
-
+            <BiSolidRightArrow className="h-6 w-6" />
           </button>
         </div>
 
@@ -127,15 +125,15 @@ export default function YearSlider() {
           <div>
             <h2 className="text-secondary font-primary text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
               {title}
-               <motion.div
-                            initial={{ scaleX: 0 }}
-                            whileInView={{ scaleX: 1 }}
-                            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-                            className="bg-secondary h-1 w-[100px] mt-2 mb-2 origin-left rounded-full"
-                            aria-hidden="true"
-                          />
+              <motion.div
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+                className="bg-secondary h-1 w-[100px] mt-2 mb-2 origin-left rounded-full"
+                aria-hidden="true"
+              />
             </h2>
-            
+
             <p className="text-black/80 font-secondary leading-relaxed mb-6">
               {text}
             </p>
@@ -145,7 +143,7 @@ export default function YearSlider() {
           <div
             className="relative flex items-center justify-center h-64 overflow-hidden"
             style={{
-              backgroundImage:  `url(/assets/dotted-bg.png)`,
+              backgroundImage: `url(/assets/dotted-bg.png)`,
               backgroundSize: "cover",
               backgroundRepeat: "repeat",
             }}

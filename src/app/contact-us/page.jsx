@@ -1,42 +1,42 @@
-// app/contact-us/page.jsx
+ContactPage 
+
+
+// app/about-us/page.jsx
+
 export const metadata = {
-  title: "Contact US Us | Ayatiworks",
+  title: "About Ayatiworks - Experts in Digital Marketing & Branding Chennai",
   description:
-    "Learn more Contact US Ayatiworks – a digital marketing, branding, and tech solutions agency focused on innovation and growth.", 
+    "Discover top digital marketing & branding experts in Chennai. Unleash your brand’s potential with innovative strategies tailored for success!", 
 };
+import React from "react";
+import HeroSection from "../components/Home/HeroSection";
+import ContactInnerPage from "../components/Contact/ContactInnerPage";
+import Form from "../components/Contact/Form";
+import Address from "../components/Contact/Address";
+import Digital from "../components/Contact/Digital";
+import Brand from "../components/Contact/Brand";
+import Map from "../components/Contact/Map";
+import PartnersInClimb from "../components/Home/PartnersInClimb";
+import Location from "../components/Contact/Location";
+import Connection from "../components/Home/Connection";
+
+
 export default function ContactPage() {
   return (
-    <section className="section section-home mt-10">
-      <div className="section-container text-center">
-        <h1 className="section-title">Get in <span className="text-secondary">Touch</span></h1>
-        <p className="section-subtitl mx-auto">
-          We'd love to hear from you. Fill out the form below.
-        </p>
+    <main className="section section-home">
+      {/* Hero / Intro */}
+      <HeroSection />
+<ContactInnerPage />
+      <Form />
+      <Address />
+      <Digital />
+      <Brand />
+      <Map />
+      <PartnersInClimb />
+      <Location />
 
-        <form className="mt-6 mx-auto space-y-4">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full border rounded-lg px-4 py-3 text-sm shadow-sm focus:ring-2 focus:ring-primary outline-none"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full border rounded-lg px-4 py-3 text-sm shadow-sm focus:ring-2 focus:ring-primary outline-none"
-          />
-          <textarea
-            placeholder="Message"
-            rows="4"
-            className="w-full border rounded-lg px-4 py-3 text-sm shadow-sm focus:ring-2 focus:ring-primary outline-none"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full bg-primary text-white font-medium rounded-lg px-6 py-3 shadow-glow hover:opacity-90 transition"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+      <Connection />
+
+    </main>
   );
 }

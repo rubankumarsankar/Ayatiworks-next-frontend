@@ -45,45 +45,47 @@ export default function HowWeDoIt() {
       >
         {/* Heading */}
         {/* 12-col row: left 4 / right 8 */}
-<div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
-  {/* LEFT (4 cols) */}
-  <motion.div
-    className="lg:col-span-4"
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 0.7, ease: "easeOut" }}
-  >
-    <h2 className="section-title flex items-start text-primary"> How do we do it?</h2>
-    <motion.div
-      initial={{ scaleX: 0 }}
-      whileInView={{ scaleX: 1 }}
-      transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-      className="bg-secondary h-1 w-[100px] mt-3 origin-left rounded-full"
-      aria-hidden="true"
-    />
-  </motion.div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+          {/* LEFT (4 cols) */}
+          <motion.div
+            className="lg:col-span-4"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
+            <h2 className="section-title flex items-start text-primary">
+              {" "}
+              How do we do it?
+            </h2>
+            <motion.div
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+              className="bg-secondary h-1 w-[100px] mt-3 origin-left rounded-full"
+              aria-hidden="true"
+            />
+          </motion.div>
 
-  {/* RIGHT (8 cols) */}
-  <motion.p
-    className="lg:col-span-8 text-black/80 font-secondary text-base sm:text-lg md:text-lg leading-8"
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-  >
-     At AyatiWorks, we’re all about unlocking a digital gateway for our
-          clients! Whether it’s sparking consumer conversations through brand
-          marketing, launching online shopping sprees, building cool platforms
-          for entertainment and finance, managing enterprise networks, or
-          supercharging performance , we’ve got it covered! Our secret sauce?
-          Practical, trustworthy, and dependable solutions that make your
-          digital dreams a reality!
-  </motion.p>
-</div>
-
+          {/* RIGHT (8 cols) */}
+          <motion.p
+            className="lg:col-span-8 text-black/80 font-secondary text-base sm:text-lg md:text-lg leading-8"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          >
+            At AyatiWorks, we’re all about unlocking a digital gateway for our
+            clients! Whether it’s sparking consumer conversations through brand
+            marketing, launching online shopping sprees, building cool platforms
+            for entertainment and finance, managing enterprise networks, or
+            supercharging performance , we’ve got it covered! Our secret sauce?
+            Practical, trustworthy, and dependable solutions that make your
+            digital dreams a reality!
+          </motion.p>
+        </div>
       </motion.div>
 
       {/* Service Cards */}

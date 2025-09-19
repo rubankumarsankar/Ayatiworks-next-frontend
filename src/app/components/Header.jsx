@@ -110,7 +110,7 @@ function SimpleDropdown({ title, items, active, pathname, onSelect }) {
             ref={btn}
             variant="text"
             className={cx(
-              "flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-full transition",
+              "flex items-center gap-2 text-sm border-none hover:border-none font-medium px-4 py-2 rounded-full transition",
               active || open
                 ? "bg-primary font-secondary text-white font-semibold hover:text-white hover:bg-primary shadow-lg"
                 : "text-black font-secondary font-semibold hover:bg-primary hover:text-white"
@@ -123,7 +123,7 @@ function SimpleDropdown({ title, items, active, pathname, onSelect }) {
           </Button>
         </MenuHandler>
 
-        <MenuList className="p-2 mt-3 rounded-xl shadow-xl min-w-[220px] ring-1">
+        <MenuList className="p-2 mt-3 border-none hover:border-none rounded-xl shadow-xl min-w-[220px] ring-1">
           {items.map((item) => {
             const isItemActive = anyMatch([item.path], pathname);
             return (
@@ -134,7 +134,7 @@ function SimpleDropdown({ title, items, active, pathname, onSelect }) {
                   close();
                 }}
                 className={cx(
-                  "block w-full text-left text-sm px-3 py-2 rounded-lg",
+                  "block w-full text-left text-sm px-3 py-2  hover:border-none rounded-lg",
                   isItemActive
                     ? "bg-primary font-primary text-xl text-white"
                     : "text-black font-primary text-xl hover:bg-primary hover:text-white"
@@ -188,7 +188,7 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
             ref={btnRef}
             variant="text"
             className={cx(
-              "flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-full transition",
+              "flex items-center gap-2 border-none hover:border-none text-sm font-medium px-4 py-2 rounded-full transition",
               active || open
                 ? "bg-primary font-secondary font-semibold text-white shadow-xl"
                 : "text-black font-secondary font-semibold hover:bg-primary hover:text-white"
@@ -201,7 +201,7 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
           </Button>
         </MenuHandler>
 
-        <MenuList className="mt-3 p-0 bg-transparent shadow-none">
+        <MenuList className="mt-3 p-0 bg-transparent border-none  hover:border-none shadow-none">
           <div className="flex gap-4 rounded-2xl bg-white/95 backdrop-blur p-3 shadow-xl ring-1 ring-black/5">
             {/* Left: group headings */}
             <div className="w-64 rounded-xl bg-white shadow-xl ring-1 ring-black/5 overflow-hidden">
@@ -216,7 +216,7 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
                       close();
                     }}
                     className={cx(
-                      "block w-full text-left px-4 py-3 text-xl font-primary text-[15px] transition",
+                      "block w-full text-left px-4 py-3 text-xl font-primary  transition",
                       isActive
                         ? "bg-primary rounded-xl shadow-xl font-primary text-white"
                         : "text-black/80 hover:bg-white hover:text-secondary",
@@ -237,7 +237,7 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
                     onSelect?.(groups[activeIdx].basePath);
                     close();
                   }}
-                  className="mb-2 inline-block rounded-full border border-white px-3 py-1 text-xs font-medium text-slate-600 hover:bg-secondary font-secondary hover:border-secondary hover:text-white"
+                  className="mb-2 inline-block rounded-ful px-3 py-1 text-xs font-medium text-slate-600 hover:bg-secondary font-secondary hover:text-white"
                 >
                   View all {groups[activeIdx].heading}
                 </button>
@@ -253,7 +253,7 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
                       close();
                     }}
                     className={cx(
-                      "block w-full text-left rounded-lg px-3 py-2 text-[15px] transition",
+                      "block w-full text-left rounded-lg px-3 py-2  transition",
                       isItemActive
                         ? "bg-primary font-primary text-xl text-white"
                         : "text-black/80 hover:bg-primary font-primary rounded-xl text-xl hover:text-white"
